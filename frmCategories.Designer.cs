@@ -53,6 +53,7 @@
             dgvCategories.Name = "dgvCategories";
             dgvCategories.ReadOnly = true;
             dgvCategories.RowHeadersWidth = 51;
+            dgvCategories.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCategories.Size = new Size(1157, 896);
             dgvCategories.TabIndex = 0;
             // 
@@ -124,6 +125,7 @@
             btnInsert.TabIndex = 7;
             btnInsert.Text = "เพิ่ม";
             btnInsert.UseVisualStyleBackColor = false;
+            btnInsert.Click += btnInsert_Click;
             // 
             // btnUpdate
             // 
@@ -135,6 +137,7 @@
             btnUpdate.TabIndex = 8;
             btnUpdate.Text = "ลบ";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
@@ -146,6 +149,7 @@
             btnDelete.TabIndex = 9;
             btnDelete.Text = "แก้ไข";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnClearForm
             // 
@@ -157,6 +161,7 @@
             btnClearForm.TabIndex = 10;
             btnClearForm.Text = "ล้างฟอร์ม";
             btnClearForm.UseVisualStyleBackColor = false;
+            btnClearForm.Click += btnClearForm_Click;
             // 
             // frmCategories
             // 
