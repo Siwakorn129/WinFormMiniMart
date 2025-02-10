@@ -39,6 +39,7 @@
             btnUpdate = new Button();
             btnDelete = new Button();
             btnClearForm = new Button();
+            btnAdd = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvCategories).BeginInit();
             SuspendLayout();
             // 
@@ -56,6 +57,7 @@
             dgvCategories.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCategories.Size = new Size(1157, 896);
             dgvCategories.TabIndex = 0;
+            dgvCategories.CellMouseDoubleClick += dgvCategories_CellMouseDoubleClick;
             // 
             // label1
             // 
@@ -163,12 +165,25 @@
             btnClearForm.UseVisualStyleBackColor = false;
             btnClearForm.Click += btnClearForm_Click;
             // 
+            // btnAdd
+            // 
+            btnAdd.BackColor = Color.FromArgb(255, 192, 128);
+            btnAdd.Font = new Font("TH Sarabun New", 19.7999973F, FontStyle.Bold);
+            btnAdd.Location = new Point(1386, 733);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(181, 116);
+            btnAdd.TabIndex = 11;
+            btnAdd.Text = "เพิ่ม";
+            btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
+            // 
             // frmCategories
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1866, 899);
+            Controls.Add(btnAdd);
             Controls.Add(btnClearForm);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
@@ -201,5 +216,6 @@
         private Button btnUpdate;
         private Button btnDelete;
         private Button btnClearForm;
+        private Button btnAdd;
     }
 }
